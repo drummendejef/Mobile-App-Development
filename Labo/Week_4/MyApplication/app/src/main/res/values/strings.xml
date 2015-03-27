@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo Launching Activities</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_explicit">ExplicitActivity</string>
+    <string name="btnStart2deActivity">Start 2de activity</string>
+    <string name="btnCANCEL">CANCEL</string>
+    <string name="btnOK">OK</string>
+    <string name="btnSpecial">Special Button</string>
+    <string name="btnNoIdea">NoIdea</string>
+    <string name="txtview_score">Score:</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BMI</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="txtView_yourInput">Your Input</string>
+    <string name="editTextHoogte">Your Length</string>
+    <string name="EditTextMass">Your Mass</string>
+    <string name="btn_update">Update</string>
+    <string name="txtView_YourBMIInfo">Your BMI Info:</string>
+    <string name="txtview_Index">Index</string>
+    <string name="enter_info_first">enter your info first</string>
+
+</resources>

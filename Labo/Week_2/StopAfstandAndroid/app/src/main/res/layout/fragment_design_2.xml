@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="be.howest.nmct.android.stopafstand.Design_2">
+
+    <TextView
+        android:text="@string/textViewSnelheid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSnelheid"/>
+
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarSnelheid"
+        android:layout_below="@+id/textViewSnelheid"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:max="150"
+        android:longClickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textViewSnelheidFeedBack"
+        android:layout_below="@+id/seekBarSnelheid"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewReactiesnelheid"
+        android:id="@+id/textViewReactiesnelheid"
+        android:layout_below="@+id/textViewSnelheidFeedBack"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarReactieSnelheid"
+        android:layout_below="@+id/textViewReactiesnelheid"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:max="50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textViewReactiesnelheidFeedback"
+        android:layout_below="@+id/seekBarReactieSnelheid"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewWegdekType"
+        android:id="@+id/textViewWegdekType"
+        android:layout_below="@+id/textViewReactiesnelheidFeedback"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewWegdekType"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroupWegtype">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButtonDroogWegdek"
+            android:id="@+id/radioButtonDroog" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobuttonNatWegdek"
+            android:id="@+id/radioButtonNat" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonBerekenStopAfstand"
+        android:id="@+id/buttonBerekenStopAfstand"
+        android:layout_below="@+id/radioGroupWegtype"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/radioGroupWegtype" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textviewStopafstandResultaatUitleg"
+        android:id="@+id/textViewStopafstandResultaatUitleg"
+        android:layout_below="@+id/buttonBerekenStopAfstand"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/StopafstandResultaatUitleg"
+        android:id="@+id/textViewStopafstandResultaat"
+        android:layout_below="@+id/textViewStopafstandResultaatUitleg"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

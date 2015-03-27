@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StopAfstandAndroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="textViewSnelheid">Selecteer uw snelheid</string>
+    <string name="textViewReactiesnelheid">Selecteer uw reactiesnelheid</string>
+    <string name="textViewWegdekType">Selecteer het wegtype</string>
+    <string name="radioButtonDroogWegdek">Droog Wegdek</string>
+    <string name="radiobuttonNatWegdek">Nat Wegdek</string>
+    <string name="textviewStopafstandResultaatUitleg">Uw Stopafstand is:</string>
+    <string name="StopafstandResultaatUitleg">Nog niet berekend</string>
+    <string name="buttonBerekenStopAfstand">Bereken</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
