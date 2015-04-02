@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffffff"
+    android:id="@+id/list">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:id="@+id/btnInfo"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/imgIcon"
+        android:layout_alignParentEnd="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="-3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Naam"
+        android:id="@+id/txtName"
+        android:layout_alignBottom="@+id/imgIcon"
+        android:layout_toEndOf="@+id/imgIcon"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="-4dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imgIcon"
+        android:background="@drawable/boogschutter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:baselineAlignBottom="false"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>

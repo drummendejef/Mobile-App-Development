@@ -12,10 +12,12 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
     //Aanmaak final String constante
-    public static final String EXTRA_BIRTHYEAR = "be.howest.nmct.week5oef1.BIRTHYEAR";
+    public static final String EXTRA_BIRTHYEAR = "be.howest.nmct.week6oef1.BIRTHYEAR";
+    public static final String EXTRA_HOROSCOOP = "be.howest.nmct.week6oef1.HOROSCOOP";
     private static final int REQUEST_BIRTHDAY = 0;
+    private static final int REQUEST_HOROSCOOP = 1;
     //Properties
-    private Button btnStartSelectGeboortejaarActivity;
+    private Button btnStartSelectGeboortejaarActivity, btnStartHoroscoopActivity;
     private TextView textViewGeboortejaar;
 
     @Override
@@ -32,6 +34,7 @@ public class MainActivity extends Activity {
 
         //Aanmaken controls
         btnStartSelectGeboortejaarActivity = (Button)findViewById(R.id.buttonStartGeboortejaar);
+        btnStartHoroscoopActivity = (Button)findViewById(R.id.buttonStarthoroscoop);
         textViewGeboortejaar = (TextView)findViewById(R.id.textViewGeboortejaar);
 
         //Opvangen buttonclicks
@@ -42,6 +45,16 @@ public class MainActivity extends Activity {
                 Intent intent = new Intent(MainActivity.this, SelectGeboortejaarActivity.class);
                 //Opstarten andere activity, een resultaat terugverwachten
                 startActivityForResult(intent, REQUEST_BIRTHDAY);
+                //Het resultaat wordt opgevangen in "onActivityResult"
+            }
+        });
+        btnStartHoroscoopActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Aanmaken intent om op te roepen
+                Intent intent = new Intent(MainActivity.this, HoroscoopActivity.class);
+                //Opstarten andre activity, een resultaat terugverwachten
+                startActivityForResult(intent, REQUEST_HOROSCOOP);
                 //Het resultaat wordt opgevangen in "onActivityResult"
             }
         });
@@ -79,10 +92,18 @@ public class MainActivity extends Activity {
         switch (requestCode)
             //Controlleren op welke vraag we een antwoord hebben binnen gekregen
         {
+            //Het geboortejaar wordt teruggegeven
             case REQUEST_BIRTHDAY:
                 String geboortejaar = "Geboortejaar: ";
-                geboortejaar = data.getStringExtra(MainActivity.EXTRA_BIRTHYEAR);
+                geboortejaar += data.getStringExtra(MainActivity.EXTRA_BIRTHYEAR);
                 textViewGeboortejaar.setText(geboortejaar);
+                break;
+            //De horoscoop wordt teruggegeven
+            case REQUEST_HOROSCOOP:
+                //Doe stuff
+                String horoscoop = "Horoscoop";
+                horoscoop = data.getStringExtra(MainActivity.EXTRA_HOROSCOOP);
+
                 break;
             default:
                 super.onActivityResult(requestCode, resultCode, data);

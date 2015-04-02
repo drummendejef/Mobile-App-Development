@@ -11,4 +11,5 @@
     <string name="Selecteer_horoscoop">Selecteer uw horoscoop</string>
     <string name="title_activity_select_geboortejaar">SelectGeboortejaarActivity</string>
     <string name="title_activity_horoscoop">HoroscoopActivity</string>
+    <string name="btnInfo">Info</string>
 </resources>
