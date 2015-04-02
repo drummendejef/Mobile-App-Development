@@ -20,6 +20,10 @@
             android:name=".SelectGeboortejaarActivity"
             android:label="@string/title_activity_select_geboortejaar" >
         </activity>
+        <activity
+            android:name=".HoroscoopActivity"
+            android:label="@string/title_activity_horoscoop" >
+        </activity>
     </application>
 
 </manifest>
