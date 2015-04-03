@@ -61,5 +61,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignEnd="@+id/buttonStartGeboortejaar" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewHoroscoopResult"
+        android:layout_below="@+id/buttonStarthoroscoop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/buttonStarthoroscoop" />
+
 
 </RelativeLayout>

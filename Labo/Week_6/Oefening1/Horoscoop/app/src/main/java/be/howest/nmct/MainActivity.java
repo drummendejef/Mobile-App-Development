@@ -7,7 +7,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
@@ -19,6 +21,7 @@ public class MainActivity extends Activity {
     //Properties
     private Button btnStartSelectGeboortejaarActivity, btnStartHoroscoopActivity;
     private TextView textViewGeboortejaar;
+    private ImageView imageViewHoroscoopResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,7 @@ public class MainActivity extends Activity {
         btnStartSelectGeboortejaarActivity = (Button)findViewById(R.id.buttonStartGeboortejaar);
         btnStartHoroscoopActivity = (Button)findViewById(R.id.buttonStarthoroscoop);
         textViewGeboortejaar = (TextView)findViewById(R.id.textViewGeboortejaar);
+        imageViewHoroscoopResult = (ImageView)findViewById(R.id.imageViewHoroscoopResult);
 
         //Opvangen buttonclicks
         btnStartSelectGeboortejaarActivity.setOnClickListener(new View.OnClickListener() {
@@ -100,9 +104,15 @@ public class MainActivity extends Activity {
                 break;
             //De horoscoop wordt teruggegeven
             case REQUEST_HOROSCOOP:
-                //Doe stuff
-                String horoscoop = "Horoscoop";
-                horoscoop = data.getStringExtra(MainActivity.EXTRA_HOROSCOOP);
+                switch (resultCode)
+                {
+                    case RESULT_CANCELED:
+                        Toast.makeText(MainActivity.this, "Geen horoscoop geselecteerd.", Toast.LENGTH_SHORT).show();
+                        break;
+                    case RESULT_OK:
+                        //imageViewHoroscoopResult een afbeelding geven
+                        imageViewHoroscoopResult.setImageResource(data.getIntExtra(EXTRA_HOROSCOOP, R.drawable.waterman));
+                }
 
                 break;
             default:
