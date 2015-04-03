@@ -9,4 +9,5 @@
     <string name="textviewNaam">Voornaam Naam</string>
     <string name="textViewEmail">emailadres</string>
     <string name="textViewScore">Score: </string>
+    <string name="textViewSelectStudent">Selecteer een student</string>
 </resources>
