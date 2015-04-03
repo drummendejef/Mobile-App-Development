@@ -1,9 +1,6 @@
-package be.howest.nmct.admin;
+package be.howest.nmct.evaluationstudents.admin;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Student implements Comparable<Student> {

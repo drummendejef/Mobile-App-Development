@@ -1,4 +1,4 @@
-package be.howest.nmct.admin;
+package be.howest.nmct.evaluationstudents.admin;
 
 public class ModulePunt {
 

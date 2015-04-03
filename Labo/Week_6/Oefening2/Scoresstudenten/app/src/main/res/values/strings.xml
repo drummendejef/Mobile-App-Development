@@ -3,4 +3,10 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textviewNaam">Voornaam Naam</string>
+    <string name="textViewEmail">emailadres</string>
+    <string name="textViewScore">Score: </string>
 </resources>
