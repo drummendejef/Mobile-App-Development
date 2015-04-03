@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/imgIcoon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Thienpondt"
+        android:id="@+id/tvLastName"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgIcoon"
+        android:textSize="17sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Jenthe"
+        android:textSize="17sp"
+        android:id="@+id/tvFirstName"
+        android:layout_alignBottom="@+id/tvLastName"
+        android:layout_toEndOf="@+id/tvLastName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="jenthe.thienpondt@howest.be"
+        android:id="@+id/tvEmail"
+        android:layout_below="@+id/tvLastName"
+        android:layout_alignStart="@+id/tvLastName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Score: 20"
+        android:id="@+id/tvScore"
+        android:layout_below="@+id/tvEmail"
+        android:layout_alignStart="@+id/tvEmail" />
+
+</RelativeLayout>
