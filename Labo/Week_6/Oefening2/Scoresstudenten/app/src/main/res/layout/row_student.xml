@@ -21,6 +21,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textViewVoornaam"
+        android:id="@+id/textViewVoornaam"
+        android:layout_above="@+id/textViewEmail"
+        android:layout_toEndOf="@+id/textViewEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/textViewEmail"
         android:id="@+id/textViewEmail"
