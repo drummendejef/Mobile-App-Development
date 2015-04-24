@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Horoscoop</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Uw_gegevens">Uw Gegevens</string>
+    <string name="naam">Uw Naam</string>
+    <string name="voornaam">Uw voornaam</string>
+    <string name="geboortejaar">Geboortejaar:</string>
+    <string name="Geboortejaar">Selecteer uw geboortejaar</string>
+    <string name="Selecteer_horoscoop">Selecteer uw horoscoop</string>
+    <string name="title_activity_select_geboortejaar">SelectGeboortejaarActivity</string>
+    <string name="title_activity_horoscoop">HoroscoopActivity</string>
+    <string name="btnInfo">Info</string>
+</resources>
