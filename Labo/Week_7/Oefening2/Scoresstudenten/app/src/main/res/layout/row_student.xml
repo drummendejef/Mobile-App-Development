@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewKleur"
+        android:background="@drawable/student_green" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textviewNaam"
+        android:id="@+id/textViewNaam"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageViewKleur" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textViewVoornaam"
+        android:id="@+id/textViewVoornaam"
+        android:layout_above="@+id/textViewEmail"
+        android:layout_toEndOf="@+id/textViewEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/textViewEmail"
+        android:id="@+id/textViewEmail"
+        android:layout_below="@+id/textViewNaam"
+        android:layout_toEndOf="@+id/imageViewKleur" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/textViewScore"
+        android:id="@+id/textViewScore"
+        android:layout_below="@+id/textViewEmail"
+        android:layout_toEndOf="@+id/imageViewKleur" />
+
+</RelativeLayout>

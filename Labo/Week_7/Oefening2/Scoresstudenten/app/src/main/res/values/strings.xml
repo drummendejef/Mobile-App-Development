@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Scores studenten</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textviewNaam">Naam</string>
+    <string name="textViewEmail">emailadres</string>
+    <string name="textViewScore">Score: </string>
+    <string name="textViewSelectStudent">Selecteer een student</string>
+    <string name="textViewVoornaam">Voornaam</string>
+</resources>
